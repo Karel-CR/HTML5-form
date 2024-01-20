@@ -9,106 +9,156 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid ">
-    <h1>Payment form example</h1>
-    <form action="mailto:karelcr1999@gmail.com" method="get">
-        
-        <div class="row">
-            <div class="col">Card #</div>
-            <div class="col-3">CVC #</div>
-            <div class="col">Amount</div>
+    <div class="container">
+
+        <div class="card">
+            <div class="card-header">
+
+                <div>
+                    <h1>Payment form example</h1>
+                </div>
+            </div>
+            <div class="card-body">
+                <section class="form">
+
+                    <form action="#" method="get">
+
+                        <div class="alert alert-danger" role="alert">
+                            Some fields are missing
+                        </div>
+
+
+
+                        <div class="row">
+                            <fieldset class="col-5">
+
+                                <label for="card"><p>Card #</p></label>
+                                <input class="form-control" type="number" placeholder="XXXXXXXXXXXXXXXX"
+                                    aria-label="XXXXXXXXXXXXXXXX" id="card"  required>
+
+                            </fieldset>
+
+                            <fieldset class="col-3">
+
+                                <label for="cvc"><p>CVC #</p></label>
+                                <input class="form-control" type="number" placeholder="0000" aria-label="0000" id="cvc"  required>
+
+                            </fieldset>
+
+                            <fieldset class="col">
+
+                                <label for="amount"><p>Amount</p></label>
+                                <div class="col input-group mb-3">
+
+                                    <span class="input-group-text">$</span>
+                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                        placeholder="Amount" id="amount" required>
+                                </div>
+
+                            </fieldset>
+
+                        </div>
+
+                        <div class="row">
+
+                            <fieldset class="col">
+
+                                <label for="first-name"><p>First Name</p></label>
+                                <input type="text" class="form-control" name="First Name" aria-label="First Name"
+                                    id="first-name" required>
+
+                            </fieldset>
+
+                            <fieldset class="col">
+
+                                <label for="last-name"><p>Last Name</p></label>
+                                <input type="text" class="form-control" name="Last Name" aria-label="Last Name"
+                                    id="last-name" maxlength="15" required>
+
+                            </fieldset>
+
+                        </div>
+
+                        <div class="row">
+
+                            <fieldset class="col-6">
+
+                                <label for="city"><p>City</p></label>
+                                <input type="text" class="form-control" name="City" aria-label="City" id="city" required>
+
+                            </fieldset>
+
+                            <fieldset class="col">
+
+                                <label for="state"><p>State</p></label>
+                                <div class="input-group mb-3" id="state">
+
+                                    <select class="form-select" id="inputGroupSelect01" required>
+                                        <option selected>Pick a state</option>
+                                        <option value="1">Philadelphia</option>
+                                        <option value="2">Virginia</option>
+                                        <option value="3">New Jersey</option>
+                                    </select>
+
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="col">
+
+                                <label for="postal-code"><p>Postal code</p></label>
+                                <input type="text" class="form-control" name="Postal-Code" aria-label="Postal code"
+                                    id="postal-code" required>
+
+                            </fieldset>
+
+                        </div>
+
+                        <div class="row justify-content-between">
+
+                            <fieldset class="col-3">
+                                <label for="card-company"><p>We accept:</p></label>
+                               
+                                <div class="cards-style">
+                                    <input type="radio" name="card-company" id="master-card"><img
+                                        src="./img/mastercard-icon-1024x658-hqjeq47z.png" class="card-company">
+                                    <input type="radio" name="card-company" id="visa"><img
+                                        src="./img/visa-logo-visa-icon-free-free-vector.jpg" class="card-company">
+                                    <input type="radio" name="card-company" id="dinners-club"><img
+                                        src="./img/visa-logo-visa-icon-free-free-vector.jpg" class="card-company">
+                                    <input type="radio" name="card-company" id="amex"><img
+                                        src="./img/visa-logo-visa-icon-free-free-vector.jpg" class="card-company">
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="col-6">
+                                <label for="message"><p>Message</p></label>
+                                <textarea class="form-control" name="Message" cols="30" rows="3" aria-label="textarea"
+                                    id="message"></textarea>
+                                    <p class="text-muted">Add any notes here.</p>
+                            </fieldset>
+
+                        </div>
+            </div>
+            <div class="card-footer text-end">
+                <input type="reset" value="Reset" class="btn btn-secondary">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
+
+            </section>
+
+
         </div>
 
-        <div class="row">
-
-            <div class="col">
-                <input class="form-control" type="text" placeholder="XXXXXXXXXXXXXXXX" aria-label="XXXXXXXXXXXXXXXX">
-            </div>
-
-            <div class="col-3">
-                <input class="form-control" type="text" placeholder="0000" aria-label="0000">
-            </div>
-
-            <div class="col input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Amount">
-            </div>
-
-            <div class="row">
-                <div class="col">First Name</div>
-                <div class="col">Last Name</div>
-            </div>
-
-            <div class="row">
-            
-                <div class="col">
-                    <input type="text" class="form-control" name="First Name" aria-label="First Name">
-                </div>
-
-                <div class="col">
-                    <input type="text" class="form-control" name="Last Name" aria-label="Last Name">
-                </div>
-            </div>
-
-            <div class="row">
-                
-                <div class="col-6">City</div>
-                <div class="col">State</div>
-                <div class="col">Postal code</div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-6">
-                    <input type="text" class="form-control" name="City" aria-label="City">
-                </div>
-
-                <div class="col">
-
-                    <div class="input-group mb-3">
-            
-                        <select class="form-select" id="inputGroupSelect01">
-                          <option selected>Pick a state</option>
-                          <option value="1">Philadelphia</option>
-                          <option value="2">Virginia</option>
-                          <option value="3">New Jersey</option>
-                        </select>
-
-                      </div>
-
-                </div>
-
-                <div class="col">
-                    <input type="text" class="form-control" name="Postal-Code" aria-label="Postal code">
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col">We accept:</div>
-                <div class="col-6">Message</div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col">rad input con imagenes</div>
-                <div class="col-6">
-                    <textarea class="form-control" name="Message"  cols="30" rows="10" aria-label="textarea"></textarea>
-                </div>
-
-            </div>
-        </div>
-    </form>
-
-    
-        
     </div>
+
+
 
 
 
