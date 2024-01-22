@@ -34,29 +34,37 @@
 
 
                         <div class="row">
-                            <fieldset class="col-5">
+                            <fieldset class="col-lg-5 col-sm-12">
 
-                                <label for="card"><p>Card #</p></label>
+                                <label for="card">
+                                    <p>Card #</p>
+                                </label>
                                 <input class="form-control" type="number" placeholder="XXXXXXXXXXXXXXXX"
-                                    aria-label="XXXXXXXXXXXXXXXX" id="card"  required>
+                                    aria-label="XXXXXXXXXXXXXXXX" id="card" required>
 
                             </fieldset>
 
-                            <fieldset class="col-3">
+                            <fieldset class="col-lg-3 col-sm-12">
 
-                                <label for="cvc"><p>CVC #</p></label>
-                                <input class="form-control" type="number" placeholder="0000" aria-label="0000" id="cvc"  required>
+                                <label for="cvc">
+                                    <p>CVC #</p>
+                                </label>
+                                <input class="form-control" type="number" placeholder="0000" aria-label="0000" id="cvc"
+                                    required>
 
                             </fieldset>
 
-                            <fieldset class="col">
+                            <fieldset class="col-lg-4 col-sm-12">
 
-                                <label for="amount"><p>Amount</p></label>
-                                <div class="col input-group mb-3">
+                                <label for="amount">
+                                    <p>Amount</p>
+                                </label>
+                                <div class="col input-group mb-3 ">
 
                                     <span class="input-group-text">$</span>
-                                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)"
-                                        placeholder="Amount" id="amount" required>
+                                    <input type="number" class="form-control"
+                                        aria-label="Amount (to the nearest dollar)" placeholder="Amount" id="amount"
+                                        required>
                                 </div>
 
                             </fieldset>
@@ -67,7 +75,9 @@
 
                             <fieldset class="col">
 
-                                <label for="first-name"><p>First Name</p></label>
+                                <label for="first-name">
+                                    <p>First Name</p>
+                                </label>
                                 <input type="text" class="form-control" name="First Name" aria-label="First Name"
                                     id="first-name" required>
 
@@ -75,7 +85,9 @@
 
                             <fieldset class="col">
 
-                                <label for="last-name"><p>Last Name</p></label>
+                                <label for="last-name">
+                                    <p>Last Name</p>
+                                </label>
                                 <input type="text" class="form-control" name="Last Name" aria-label="Last Name"
                                     id="last-name" maxlength="15" required>
 
@@ -85,23 +97,30 @@
 
                         <div class="row">
 
-                            <fieldset class="col-6">
+                            <fieldset class="col-lg-6 col-sm-12">
 
-                                <label for="city"><p>City</p></label>
-                                <input type="text" class="form-control" name="City" aria-label="City" id="city" required>
+                                <label for="city">
+                                    <p>City</p>
+                                </label>
+                                <input type="text" class="form-control" name="City" aria-label="City" id="city"
+                                    required>
 
                             </fieldset>
 
-                            <fieldset class="col">
+                            <fieldset class="col-lg-6 col-sm-12">
 
-                                <label for="state"><p>State</p></label>
+                                <label for="state">
+                                    <p>State</p>
+                                </label>
                                 <div class="input-group mb-3" id="state">
 
                                     <select class="form-select" id="inputGroupSelect01" required>
+
                                         <option selected>Pick a state</option>
                                         <option value="1">Philadelphia</option>
                                         <option value="2">Virginia</option>
                                         <option value="3">New Jersey</option>
+
                                     </select>
 
                                 </div>
@@ -110,7 +129,9 @@
 
                             <fieldset class="col">
 
-                                <label for="postal-code"><p>Postal code</p></label>
+                                <label for="postal-code">
+                                    <p>Postal code</p>
+                                </label>
                                 <input type="text" class="form-control" name="Postal-Code" aria-label="Postal code"
                                     id="postal-code" required>
 
@@ -120,29 +141,35 @@
 
                         <div class="row justify-content-between">
 
-                            <fieldset class="col-3">
-                                <label for="card-company"><p>We accept:</p></label>
-                               
+                            <fieldset class="col-lg-3 col-sm-12">
+
+                                <label for="card-company">
+                                    <p>We accept:</p>
+                                </label>
+
                                 <div class="cards-style">
+
                                     <input type="radio" name="card-company" id="master-card"><img
                                         src="./img/credit-card.png" class="card-company">
-                                    <input type="radio" name="card-company" id="visa"><img
-                                        src="./img/visa-logo.png" class="card-company">
+                                    <input type="radio" name="card-company" id="visa"><img src="./img/visa-logo.png"
+                                        class="card-company">
                                     <input type="radio" name="card-company" id="dinners-club"><img
                                         src="./img/diners-club.png" class="card-company">
-                                    <input type="radio" name="card-company" id="amex"><img
-                                        src="./img/symbol.png" class="card-company">
+                                    <input type="radio" name="card-company" id="amex"><img src="./img/symbol.png"
+                                        class="card-company">
+                                        
                                 </div>
 
                             </fieldset>
 
-                            <fieldset class="col-6">
-                                <label for="message"><p>Message</p></label>
+                            <fieldset class="col-lg-6 col-sm-12">
+                                <label for="message">
+                                    <p>Message</p>
+                                </label>
                                 <textarea class="form-control" name="Message" cols="30" rows="3" aria-label="textarea"
                                     id="message"></textarea>
-                                    <p class="text-muted">Add any notes here.</p>
+                                <p class="text-muted">Add any notes here.</p>
                             </fieldset>
-
                         </div>
             </div>
             <div class="card-footer text-end">
